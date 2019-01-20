@@ -26,38 +26,34 @@ API willbe running at localhost:8000, incase if the port is used or not availabl
 log.Fatal(http.ListenAndServe(":8000", handlers.CORS( allowedOrigins,allowedMethods)(router)))
 ```
 ### API End Points Available & Sample Requests
-	```
+```
    POST /statscards
    Request:
    {
       "fromDate": "2018-11-20",
       "toDate": "2019-01-20"
    }
-   ```
-   ```
+
 	POST /login
    {
       "email": "anjali@email.com",
       "password": "test1234"
    }
-   ```
-   ```
+  
 	POST /userchart
     Request:
    {
       "fromDate": "2018-11-20",
       "toDate": "2019-01-20"
    }
-   ```
-   ```
+   
 	POST /salesdata
     Request:
    {
       "fromDate": "2018-11-20",
       "toDate": "2019-01-20"
    }
-   ```
-   ```
+   
 	POST /emaildata
     Request:
    {
